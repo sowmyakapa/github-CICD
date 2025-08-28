@@ -1,14 +1,16 @@
 name: My First GitHub Actions
 
 on:
-  push:
-    branches:
-      - 'main'
+  pull_request:
+    types:
+      - closed
+  
 
 
 
 jobs:
-  build:
+  if_merged:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
 
     strategy:
