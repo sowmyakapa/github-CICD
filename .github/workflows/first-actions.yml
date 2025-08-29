@@ -10,7 +10,8 @@ on:
 
 jobs:
   deploy_on:
-   environment: [testing,production,staging]
+   runs_on: ubuntu-latest
+   environment: [testing]
   if_merged:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
