@@ -1,5 +1,6 @@
 name: My First GitHub Actions
 #This is final commit and im just trying it for the first time
+# this is the first test commit and just seeing how does it work
 on: [push]
 
 jobs:
