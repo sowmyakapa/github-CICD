@@ -5,6 +5,7 @@ on:
     branches:
       - main
 
+
 env:
   KUBECONFIG: ${{ secrets.KUBECONFIG }}
   SONAR_TOKEN: ${{ secrets.SONAR_TKN }}
